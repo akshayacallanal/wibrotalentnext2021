@@ -1,0 +1,203 @@
+1)
+
+public class Even{
+public static void main(String[] args){
+int x=10;
+        
+if(x%2==0){
+System.out.println("even");
+       
+ }
+        
+else{
+ System.out.println("odd");
+       
+ }
+    
+}
+
+}
+
+2)
+public class Even{
+public static void main(String[] args){
+int x=3;
+        
+if(x%2==0){
+System.out.println("even");
+       
+ }
+        
+else{
+ System.out.println("odd");
+       
+ }
+    
+}
+
+}
+
+3)
+
+public class Lastdigit{
+public static void main(String[] args){
+        
+int result;
+int number = 3564;
+      
+result=number%10;
+       
+System.out.println(result);
+    
+}
+
+}
+
+4)
+public class Lastdigit{
+   
+ public static void main(String[] args){
+       
+ int i = 123456;
+        
+ System.out.print(Math.abs((i%100)/10));
+      
+}
+
+}
+
+5)
+
+public class Sum
+{
+	public static void main(String arg[])	
+	{
+	    int sum=0,n=5467;
+	    for(sum=0 ;n!=0 ;n/=10)
+	    {
+		sum+=n%10;
+	    }
+	    System.out.println(sum);               	  
+	}
+}
+
+1)
+
+public class SumOfDigits
+{
+	public static void main(String arg[])	
+	{
+	    int mul, x=3,y=7;
+	    mul=x*y;
+	    System.out.println(mul);
+	}
+}
+2)public class SumOfeven
+{
+	public static void main(String arg[])	
+	{
+	    int[] num={2,4,6,3,5};
+	    int even=0,,i;
+	    System.out.println(num);
+	    for(i=0;i<num.lenght;i++)
+	    if(i%2==0){
+	        even++;
+	    }
+	    System.out.println(even);
+	}
+}
+
+4)
+public class SumOfDigits
+{
+	public static void main(String arg[])	
+	{
+	    int[] num={2,4,6,3,5};
+	    int even=0 , odd=0 ,i;
+	    System.out.println(num);
+	    for(i=0;i<num.lenght;i++)
+	    if(i%2==0){
+	        even++;
+	    }
+	    else{
+	        odd++;
+	    }
+	    System.out.println(even);
+	    System.out.println(odd);
+	}
+}
+
+1)
+public class Prime {
+
+    public static void main(String[] args) {
+
+        int num = 29;
+        boolean flag = false;
+        for(int i = 2; i <= num/2; ++i)
+        {
+            // condition for nonprime number
+            if(num % i == 0)
+            {
+                flag = true;
+                break;
+            }
+        }
+
+        if (!flag)
+            System.out.println(num + " is a prime number.");
+        else
+            System.out.println(num + " is not a prime number.");
+    }
+}
+
+2)public class Fact {
+
+    public static void main(String[] args) {
+
+        int fact=1,num=10;
+        for(int i=1;i<=num;++i)
+        {
+            fact=fact*i;
+        }
+        System.out.println(fact);
+    }
+}
+
+3)
+class Fibonacci { 
+    static int fib(int n) 
+    { 
+        if (n <= 1) 
+            return n; 
+        return fib(n - 1) + fib(n - 2); 
+    } 
+  
+    public static void main(String args[]) 
+    { 
+        int n = 9; 
+        System.out.println(fib(n)); 
+    } 
+4)
+public class Fact {
+ public static void main(String[] args) {
+int count,i,num,n=11;
+while (count < n){
+      num=num+1;
+      for (i = 2; i <= num; i++){ 
+        if (num % i == 0) {
+          break;
+        }
+      }
+      if ( i == num){//if it is a prime number
+        count = count+1;
+      }
+    }
+    System.out.println("Value of nth prime: " + num);
+  }
+}
+} 
+
+
+
+
